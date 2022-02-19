@@ -1,0 +1,257 @@
+/* Text */
+h1, h2, h3 , h4, h5, h6, .inline-block {
+  font-family: 'Anton', sans-serif;
+}
+p {
+  font-family: 'Jura', sans-serif;
+}
+
+
+/* Navigation Bar */
+.customNav {
+  position: fixed;
+  width: 100%;
+  background: url("../images/transparency.png");
+  background-color: transparent !important;
+  background-size: cover;
+  z-index: 10;
+}
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+.navbar-brand img {
+  padding-right: 15px;
+  width: 65px;
+}
+.nav-item {
+  margin: 0px 15px;
+}
+
+
+/* Nav options */
+.customNav a {
+  color: white !important;
+}
+.navCTA {
+  font-size: 15px;
+  background-color: #F08080;
+  border-color: #F08080;;
+}
+
+/* Jumbotron  */
+.jumbotron {
+  background-image: url(../images/Me.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 25px);
+  display: flex;
+  justify-content: right;
+
+}
+
+.jumboCopy {
+  width: 70%;
+  min-width: 500px;
+  max-width: 700px;
+  color: white;
+  align-self: center;
+  text-align: center;
+}
+
+.smallMePhoto {
+  display: none;
+}
+
+
+/* About me text */
+.display-4, .subCategories {
+  text-align: left;
+}
+
+.lead {
+  text-align: left;
+}
+
+.btn-about {
+  background-color: #F08080;
+  border-color: #F08080;
+}
+
+/* Customizing My Work Section */
+
+.allWork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.allProjects {
+  width: 30%;
+}
+
+.singleWork {
+  display: flex;
+  background-color: #21a0a0;
+  padding: 30px;
+  margin-bottom: 30px;
+
+}
+
+.projectImage {
+  padding-right: 80px;
+}
+
+
+.myWork.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Customizing My UX Skills Section */
+
+.mySkillsSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.mySkills.title {
+  text-align: center;
+}
+
+.skillsRow{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.allSkills {
+  text-align: center;
+}
+
+.oneSkill {
+  
+  margin: 0px 30px 30px 30px;
+  padding: 30px 30px 30px 30px;
+  background-color: #21a0a0;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.skillTitle {
+  margin-top: 10px;
+}
+
+/* Footer Bar */
+.customFoot {
+  
+  width: 100%;
+  background: url("../images/transparency.png");
+  background-color: transparent !important;
+  background-size: cover;
+}
+
+
+.inline-block {
+  display: inline-flex;
+  vertical-align: top;
+  text-align: center;
+  color: white;
+  padding-left: 50px;
+  padding-right:  50px;
+  font-size: x-large;
+}
+
+footer {
+  background-color: #21a0a0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.footUl {
+  width: 100%;
+  margin-left: auto;
+  
+
+}
+
+@media only screen and (max-width: 600px){
+  .skillsRow { 
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+      
+    }
+
+  .projectContent {
+    padding-top: 30px;
+  }
+  .singleWork {
+    display: flex;
+    background-color: #21a0a0;
+    padding: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    }
+
+    .projectImage {
+      padding-right: 0px;
+    }
+
+    /* Jumbotron  */
+
+
+    .profileBackground {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .jumbotron {
+      background-image: none;
+      background-color: #21a0a0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: auto;
+      flex-direction: column;
+      padding-top: 100px;
+      justify-content: center;
+    }
+    
+    /* Jumbotron copy */
+    .jumboCopy {
+      width: 100%;
+      min-width: 500px;
+      max-width: 700px;
+      color: white;
+      align-self: center;
+    }
+
+    .display-4, .subCategories {
+      text-align: center;
+    }
+    
+    .lead {
+      text-align: center;
+    }
+    
+    .smallMePhoto{
+      display:flex;
+      height: 50%;
+      width: 50%;
+      border-radius: 50px;
+      align-self: center;
+    }
+
+
+}
+  
