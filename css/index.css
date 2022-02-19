@@ -6,6 +6,14 @@ p {
   font-family: 'Jura', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FCFFF7;
+}
+
 
 /* Navigation Bar */
 .customNav {
@@ -44,7 +52,8 @@ p {
   background-image: url(../images/Me.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 25px);
+  height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: right;
 
@@ -80,22 +89,29 @@ p {
 
 /* Customizing My Work Section */
 
-.allWork {
+.containAll {
   display: flex;
+  height: 100%;
+  width: 99vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.allWork {
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.allProjects {
+.btnallProjects {
   width: 30%;
+
 }
 
 .singleWork {
   display: flex;
+  padding: 10px 10px 10px 10px;
   background-color: #21a0a0;
-  padding: 30px;
-  margin-bottom: 30px;
 
 }
 
@@ -106,6 +122,7 @@ p {
 
 .myWork.title {
   text-align: center;
+  padding-top: 80px;
   margin-bottom: 30px;
 }
 
@@ -114,10 +131,14 @@ p {
 .mySkillsSection {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+
 }
 
 .mySkills.title {
   text-align: center;
+  padding-top: 80px;
+  margin-bottom: 30px;
 }
 
 .skillsRow{
@@ -134,12 +155,17 @@ p {
 .oneSkill {
   
   margin: 0px 30px 30px 30px;
-  padding: 30px 30px 30px 30px;
+  padding: 50px 50px 50px 50px;
   background-color: #21a0a0;
   border-radius: 50px;
   display: flex;
   flex-direction: column;
 
+}
+
+.skillText {
+  width: 400px;
+  height: 200px;
 }
 
 .skillTitle {
@@ -169,7 +195,7 @@ p {
 footer {
   background-color: #21a0a0;
   width: 100%;
-  height: 100px;
+  height: 50vh;
   display: flex;
   align-items: center;
   
@@ -183,13 +209,8 @@ footer {
 }
 
 @media only screen and (max-width: 600px){
-  .skillsRow { 
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-      
-    }
+
+
 
   .projectContent {
     padding-top: 30px;
@@ -206,6 +227,15 @@ footer {
 
     .projectImage {
       padding-right: 0px;
+    }
+
+
+    .skillsRow { 
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+      
     }
 
     /* Jumbotron  */

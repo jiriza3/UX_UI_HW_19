@@ -25,16 +25,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link navHome" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Work</a>
+            <a class="nav-link navWork" href="#TheWork">My Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Skills</a>
+            <a class="nav-link navSkills" href="#TheSkills">My Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Me</a>
+            <a class="nav-link navContact" href="#">Contact Me</a>
           </li>
           <li class="nav-item">
             <a class="btn btn-primary btn-lg navCTA" href="#" role="button">Download Resume</a>
@@ -44,7 +44,6 @@
     </nav>
     <!-- End navigation bar -->
      
-
 
     <!-- Jumbotron -->
     <div class = "profileBackground">
@@ -60,7 +59,7 @@
           and understanding their needs personally so that I can improve their workflows and their lives. My skills include Figma, Adobe XD, 
           Invision, and Visio. As an IT manager in the university setting, I’ve directly worked with a varied user base which has been the most 
           significant influence in my adaptive and collaborative approach towards problem-solving.</p>
-        <a class="btn btn-primary btn-lg btn-about" href="#" role="button">Learn more about me</a>
+        <a class="btn btn-primary btn-lg btn-about" href="#TheWork" role="button">Learn more about me</a>
       </div>
     </div>
   </div>
@@ -68,7 +67,9 @@
 
 
     <!-- My Work Section -->
-    <section class="myWork">
+    <section class="myWork containAll">
+      <!-- Anchor for my work section -->
+      <a name="TheWork"></a> 
       <h1 class="myWork title">My Work</h1>
 
       <div class="myWork allWork">
@@ -90,13 +91,13 @@
 
         <div class="myWork singleWork">
           <div class="projectImage">
-            <img src="images/PlaceHolder.png">
+            <img src="images/Project 2.png">
           </div>
 
           <div class="projectContent">
-            <h2>Project 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit</p>
+            <h2>Find and Seek</h2>
+            <p>Check out these designs for an app tailored to college students that allows for a simpler and more efficient way to communicate about lost and found items across campuses. 
+            </p>
               <a class="btn btn-primary btn-lg btn-about" href="#" role="button">View Project</a>
           </div>
 
@@ -104,24 +105,27 @@
 
         <div class="myWork singleWork">
           <div class="projectImage">
-            <img src="images/PlaceHolder.png">
+            <img src="images/Project 3.png">
           </div>
 
           <div class="projectContent">
-            <h2>Project 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit</p>
+            <h2>Adopt a UI</h2>
+            <p>The Chicago Pet Rescue (CPR) is an NPO that provides services for rescues in the Chicagoland area. Currently, the website’s 
+              design suffers from poor navigation, confusing language, and overwhelming forms. It is my belief that an improved UI can improve adoption rates and give these animals a better chance for a new home.</p>
               <a class="btn btn-primary btn-lg btn-about" href="#" role="button">View Project</a>
           </div>
 
         </div>
-        <a class="btn btn-primary btn-lg btn-about allProjects" href="#" role="button">View all projects</a>
+        <!-- <a class="btn btn-primary btn-lg btn-about allProjects" href="#" role="button">View all projects</a> -->
       </div>
+      <a class="btn btn-primary btn-lg btn-about btnallProjects" href="#TheSkills" role="button">View Skills</a>
     </section>
 
     <!-- My Skills Section -->
 
     <section class="mySkillsSection">
+      <!-- Anchor for my skills section -->
+      <a name="TheSkills"></a> 
       <h1 class="mySkills title">My UX Skills</h1>
       <div class="skillsRow">
         <!-- Skill 1 -->
@@ -129,12 +133,12 @@
 
          <div class="mySkills oneSkill">
            <div class="skillImage">
-            <img src="images/Circle PlaceHolder.png" class="skillImage">
+            <img src="images/Chart.png" class="skillImage">
           </div>  
             <div class="skillBody">
                 <h3 class="skillTitle">Data Synthesis/Analysis</h3>
-                <p class="skillText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit</p>
+                <p class="skillText">In my data work I set robust objectives in which to base my KPIs upon. Once the relevant data is gathered, it is validated and scrubbed for accuracy. 
+                  The data is then analyzed and given purpose with the intention of making an impact.</p>
               </div>
             </div>
         </div>
@@ -143,11 +147,12 @@
 
           <div class="mySkills oneSkill">
             <div class="skillImage">
-              <img src="images/Circle PlaceHolder.png" class="skillImage">
+              <img src="images/Design.png" class="skillImage">
             </div>                 <div class="skillBody">
                  <h3 class="skillTitle">UI Design</h3>
-                 <p class="skillText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit</p>
+                 <p class="skillText">Through the use of UX research, I create UI designs within Figma and Adobe XD that best capture the expectations set by a user. Careful consideration 
+                   is taken to make sure that the usability heuristics of UI design are in sync with the UX expectations of the user. Existing designs are iterative and constantly tested and 
+                   researched with the users I interact with.</p>
                </div>
              </div>
          </div>
@@ -157,11 +162,13 @@
 
           <div class="mySkills oneSkill">
             <div class="skillImage">
-              <img src="images/Circle PlaceHolder.png" class="skillImage">
+              <img src="images/Flow.png" class="skillImage">
             </div>                 <div class="skillBody">
                  <h3 class="skillTitle">User Flows</h3>
-                 <p class="skillText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit</p>
+                 <p class="skillText">I typically advocate to my users that in order to improve a process once must understand the ins and outs of the current system in play. 
+                   This first starts with the user and I defining the many flows of an organization’s functions and how they intermingle with the user. From there I find that my users 
+                   are able to easily identify bottlenecks in their own user flows allowing the collaborative process to begin towards building improvements. 
+                </p>
                </div>
              </div>
          </div>
@@ -191,6 +198,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   </body>
+<script src="js/index.js"></script>
 
 </html>
